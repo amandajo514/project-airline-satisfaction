@@ -95,7 +95,7 @@ if page == "📊 Exploritory Data Analysis":
     # Build Modeling Page      
 if page == "📉 Modeling":
     st.title("📉 Modeling")
-    st.markdown("On this page, you can see how well different **machine learning** models make predictions on the iris species.")
+    st.markdown("On this page, you can see how well different **machine learning** models make predictions.")
     #Set up X and y
     X = df_train.drop(columns = 'satisfaction')
     y = df_train['satisfaction']
@@ -105,7 +105,7 @@ if page == "📉 Modeling":
     model_option = st.selectbox("Select a Model:", ['KNN', 'Logistic Regression', 'Random Forest'], index = None)
     if model_option:
         if model_option == "KNN":
-            k_value = st.slider("Select the number of neighbors (k):", 1, 29, 5, 2)
+            k_value = st.slider("Select the number of neighbors (k):", 1, 29, 2)
             model = KNeighborsClassifier(n_neighbors=k_value)
         elif model_option == "Logistic Regression":
             model = LogisticRegression()
