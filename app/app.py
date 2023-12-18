@@ -105,7 +105,7 @@ if page == "📉 Modeling":
     model_option = st.selectbox("Select a Model:", ['KNN', 'Logistic Regression', 'Random Forest'], index = None)
     if model_option:
         if model_option == "KNN":
-            k_value = st.slider("Select the number of neighbors (k):", 1, 29, 2)
+            k_value = st.slider("Select the number of neighbors (k):", 1, 29, 5, step =2)
             model = KNeighborsClassifier(n_neighbors=k_value)
         elif model_option == "Logistic Regression":
             model = LogisticRegression()
