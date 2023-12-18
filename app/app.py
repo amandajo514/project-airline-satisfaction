@@ -22,7 +22,9 @@ df_test = pd.read_csv('../data/cleaned_test.csv')
 
 df_train.drop(columns = ["Unnamed: 0"], inplace = True) 
 df_test.drop(columns = ["Unnamed: 0"], inplace = True) 
-# ^^ We did do this in Jupyter and checked and the unnamed column was gone. Also checked the cleaned data here and it shows the column gone. However, was still showing when preview the data in the app for some reason (couldn't figure out why) so pasting the code here too to have it not show.
+# ^^ We did do this in Jupyter and checked and the unnamed column was gone. Also checked the cleaned data here and it shows the column gone. 
+# ^^ However, was still showing when preview the data in the app for some reason (couldn't figure out why), 
+# ^^ so pasting the code here too.. to have it not show.
 
 #build homepage
 if page == "🏠 Home":
