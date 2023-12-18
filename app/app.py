@@ -17,8 +17,8 @@ st.set_page_config(page_title = "Airline Satisfaction", page_icon = ":small_airp
 page = st.sidebar.selectbox("Select a Page", ["🏠 Home","🗄️ Data Overview","📊 Exploritory Data Analysis","📉 Modeling"])
 
 #read in the data
-df_train = pd.read_csv('data/cleaned_train.csv')
-df_test = pd.read_csv('data/cleaned_test.csv')
+df_train = pd.read_csv('../data/cleaned_train.csv')
+df_test = pd.read_csv('../data/cleaned_test.csv')
 
 df_train.drop(columns = ["Unnamed: 0"], inplace = True) 
 df_test.drop(columns = ["Unnamed: 0"], inplace = True) 
